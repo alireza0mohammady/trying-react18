@@ -1,11 +1,9 @@
 import "./App.css";
-import ListGroup from "./components/ListGroup";
-
+import Alert from "./components/Alert";
 function App() {
-  const items = ["one", "two", "three", "four"];
   return (
-    <div>
-      <ListGroup items={items} heading="numbers"></ListGroup>
+    <div className="m-5">
+      <Alert>app props to alert</Alert>
     </div>
   );
 }
