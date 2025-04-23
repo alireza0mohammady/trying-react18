@@ -1,15 +1,11 @@
-import Button from "./Button";
-
 const Alert = (props) => {
+  const { children, isVisible } = props;
   return (
-    <Button
-      handleClick={() => {
-        console.error("alert component");
-      }}
-      colorStyle="bg-red-200 text-red-700 border-red-700"
+    <div
+      className={`px-6 py-4 bg-red-100 text-red-700 text-center rounded-lg my-5 ${!isVisible ? "hidden" : ""}`}
     >
-      {props.children}
-    </Button>
+      {children}
+    </div>
   );
 };
 
